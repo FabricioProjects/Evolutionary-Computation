@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOD_OPT>
+  <GA>
+    <OFFSPRING_SZ>50</OFFSPRING_SZ>
+    <POOL_SZ>20</POOL_SZ>
+    <ELITE_SZ>10</ELITE_SZ>
+    <RANDOM_SZ>0</RANDOM_SZ>
+    <MUT_RATE>0.01</MUT_RATE>
+    <MUT_SIZE>0.05</MUT_SIZE>
+  </GA>
+  <SIMULATION>
+    <PARAMETERS>
+      <PARAM NAME="t-init"          TYPE="INT"    VAR="false"/>
+      <PARAM NAME="min-ret"         TYPE="INT"    VAR="false"/>
+      <PARAM NAME="gmi-avg-days"    TYPE="INT"    VAR="false"/>
+      <PARAM NAME="simulation"      TYPE="VOID"   VAR="false"/>
+      <PARAM NAME="data-dir"        TYPE="STRING" VAR="false"/>
+      <PARAM NAME="block-time"      TYPE="INT"    VAR="false"/>
+      <PARAM NAME="dir"             TYPE="INT"    VAR="false"/>
+      <PARAM NAME="sma-max-sl"      TYPE="DOUBLE" VAR="false"/> <!--5.0 6.0-->
+      <PARAM NAME="sma-sg"          TYPE="DOUBLE" VAR="false"/> <!--2.5 300.0-->
+      <PARAM NAME="sma-wgap"        TYPE="DOUBLE" VAR="false"/> <!--1.0 1.5-->
+      <PARAM NAME="quarks"          TYPE="VOID"   VAR="false"/>
+      <PARAM NAME="stock"           TYPE="STRING" VAR="false"/>
+      <PARAM NAME="sma-trade-start" TYPE="TIME"   VAR="false"/>
+      <PARAM NAME="sma-trade-stop"  TYPE="TIME"   VAR="false"/>
+      <PARAM NAME="profile"         TYPE="STRING" VAR="false"/>
+      <PARAM NAME="candle-out-gain" TYPE="INT"    VAR="true"><MIN>60</MIN><MAX>3600</MAX></PARAM>
+      <PARAM NAME="candle"          TYPE="INT"    VAR="true"><MIN>300</MIN><MAX>3600</MAX></PARAM>
+      <PARAM NAME="t-max"           TYPE="INT"    VAR="true"><MIN>300</MIN><MAX>900</MAX></PARAM>
+      <PARAM NAME="gmi-min"         TYPE="DOUBLE" VAR="true"><MIN>0.00</MIN><MAX>1.00</MAX></PARAM>
+      <PARAM NAME="gmi-max"         TYPE="DOUBLE" VAR="true"><MIN>0.70</MIN><MAX>2.20</MAX></PARAM>
+      <PARAM NAME="margin2"         TYPE="DOUBLE" VAR="true"><MIN>0.05</MIN><MAX>3.00</MAX></PARAM>
+      <PARAM NAME="margin1"         TYPE="DOUBLE" VAR="true"><MIN>0.05</MIN><MAX>3.00</MAX></PARAM>
+      <PARAM NAME="sma-min-sl"      TYPE="DOUBLE" VAR="true"><MIN>1.50</MIN><MAX>5.00</MAX></PARAM>
+      <PARAM NAME="gmi-tframe"      TYPE="INT"    VAR="true"><MIN>60</MIN><MAX>900</MAX></PARAM>
+      <PARAM NAME="amp-factor"      TYPE="DOUBLE" VAR="true"><MIN>1.10</MIN><MAX>7.00</MAX></PARAM>
+      <PARAM NAME="cut"             TYPE="DOUBLE" VAR="true"><MIN>0.00</MIN><MAX>1.00</MAX></PARAM>
+      <PARAM NAME="min-factor"      TYPE="DOUBLE" VAR="true"><MIN>0.10</MIN><MAX>3.00</MAX></PARAM>
+      <PARAM NAME="sup-band-lim"    TYPE="DOUBLE" VAR="true"><MIN>0.10</MIN><MAX>7.50</MAX></PARAM>
+      <PARAM NAME="inf-band-lim"    TYPE="DOUBLE" VAR="true"><MIN>0.10</MIN><MAX>7.00</MAX></PARAM>
+      <PARAM NAME="perc-band-lim"   TYPE="DOUBLE" VAR="true"><MIN>0.10</MIN><MAX>7.00</MAX></PARAM>
+      <PARAM NAME="ma"              TYPE="INT"    VAR="true"><MIN>60</MIN><MAX>1200</MAX></PARAM>
+      <PARAM NAME="ma"              TYPE="INT"    VAR="true"><MIN>450</MIN><MAX>1800</MAX></PARAM>
+      <PARAM NAME="ma"              TYPE="INT"    VAR="true"><MIN>900</MIN><MAX>5400</MAX></PARAM>
+      <PARAM NAME="sma-p-A"         TYPE="DOUBLE" VAR="true"><MIN>0.05</MIN><MAX>1.5</MAX></PARAM>
+      <PARAM NAME="sma-p-B"         TYPE="DOUBLE" VAR="true"><MIN>1.50</MIN><MAX>15.0</MAX></PARAM>
+      <PARAM NAME="sma-p-C"         TYPE="DOUBLE" VAR="true"><MIN>0.30</MIN><MAX>4.0</MAX></PARAM>
+    </PARAMETERS>
+    <METRICS>
+      <METRIC NAME="Tot Result" />
+      <METRIC NAME="Op Avg" />	
+      <METRIC NAME="Daily Avg" />
+      <METRIC NAME="Pos Daily Avg" />
+      <METRIC NAME="Pos Stdev" />
+      <METRIC NAME="Neg Daily Avg" />
+      <METRIC NAME="Neg Stdev" />
+      <METRIC NAME="pos ratio" />
+      <METRIC NAME="Drawdown" />
+      <METRIC NAME="Total Ops" />
+    </METRICS>
+  </SIMULATION>
+</DOD_OPT>

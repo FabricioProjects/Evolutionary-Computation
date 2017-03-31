@@ -1,0 +1,5 @@
+*~
+*.o
+*.opt~
+opt
+.directory
